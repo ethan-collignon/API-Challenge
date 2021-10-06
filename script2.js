@@ -13,19 +13,27 @@ function pokemon(e) {
             return response.json();
         })
         .then(function (json) {
-            console.log(json.height)
-           let height = json.height +"ft"
-            displayHeight(height)
+            console.log(json.height,json.id,json.weight);
+            displayData(json)
         })
         .catch(error => {
             console.log(error);
         })
 }
 
-function displayHeight(heightJson) {
-    console.log(heightJson);
+function displayData(json) {
+    let height = json.height;
+    let id = json.id;
+    let weight = json.weight;
+
     let para = document.getElementById("height")
-     para.innerText = heightJson
+     para.innerText = height
+
+    let para2 = document.getElementById("id")
+    para2.innerText = id
+
+    let para3 = document.getElementById("weight")
+    para3.innerText = weight
 }
 
 formSubmit.addEventListener('submit', pokemon);

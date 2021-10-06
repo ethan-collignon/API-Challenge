@@ -1,58 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Gluten&display=swap');
+
 body {
-    background-image: url(./whos_that_pokemon.png);
-    background-size: 100% auto;
+    background-image: url(./API1.jpg);
+    background-size: auto;
     background-repeat: no-repeat;
     z-index: -1;
+    display: grid;
+    font-family: 'Gluten', cursive;
+}
+.userBox{
+    display: flex;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 70px;
 }
 
-.inputBox {
-   position: fixed;
-   padding-top: 500px;
-   padding-left: 100px;
-}
-
-#search {
-    background-color: rgb(245, 212, 21);
-    border-color: rgb(77, 77, 233);
-    border-width: 4px;
-    border-radius: 15px;
+.heading {
+    text-shadow: .3rem .3rem .9rem black;
+    color: rgb(245, 212, 21);
 }
 
 .heading {
     position: relative;
     font-size: 42px;
     text-align: center;
-    float: left;
-    padding-bottom: 20px;
-    color: rgb(245, 212, 21);
-    z-index: 2;
-}
-
-.wrapper{
-    margin-left:auto;
-    margin-right:auto;
-    width:960px; 
-}
-
-#height {
-    z-index: 10;
-    position: relative;
-    padding-left: 125px;
-    font-size: 80px;
+    padding-top: 50px;
 }
 
 h1 {
-    -webkit-text-stroke: 4px rgb(77, 77, 233);
-    z-index: 3;
-    position: relative; top: -30px;
+    font-size: 62px
 }
 
-h2 {
-    -webkit-text-stroke: 4px rgb(77, 77, 233);
-    z-index: 6;
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    margin-left:auto;
+    margin-right:auto;
+    width: auto; 
+    padding-top: 265px;
 }
 
-.userBox{
-    padding-left: 70px;
-    z-index: 6;
+.height,
+.id,
+.weight {
+    width: 180px;
+    height: 150px;
+    text-align: center;
+    text-shadow: .3rem .3rem .9rem white;
 }
+
+
+
+
+
